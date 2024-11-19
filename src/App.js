@@ -2,7 +2,9 @@ import Pricing from './components/Pricing';
 
 function App() {
   return (
-    <Pricing />
+    <main>
+      <Pricing />
+    </main>
   );
 }
 

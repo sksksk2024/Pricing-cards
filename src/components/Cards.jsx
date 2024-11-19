@@ -11,10 +11,10 @@ const Cards = ({ data, isMonthly }) => {
           }`}
         >
           <div className="card text-center">
-            <h3 className="text-sm font-bold mb-16M">{plan.title}</h3>
-            <p className="text-2xl font-bold mb-16M">
+            <h2 aria-label="choose a plan" className="text-sm font-bold mb-16M">{plan.title}</h2>
+            <h3 className="text-2xl font-bold mb-16M">
               {isMonthly ? plan.monthly : plan.yearly}
-            </p>
+            </h3>
             <hr />
             <p className="font-semibold text-xs py-8P">{plan.storage}</p>
             <hr />
@@ -22,7 +22,7 @@ const Cards = ({ data, isMonthly }) => {
             <hr />
             <p className="font-semibold text-xs py-8P">{plan.sendUp}</p>
             <hr />
-            <button
+            <button aria-label="learn more"
               className={`relative top-10I p-8P hover:p-6P ${
                 plan.font === "white"
                   ? "text-white bg-custom-gradient  hover:text-purple hover:border-purple hover:bg-none"
