@@ -4,7 +4,7 @@ const Cards = ({ data, isMonthly }) => {
       {data.map((plan, index) => (
         <div
           key={index} // Move `key` here to the top-level element
-          className={`w-256W p-32P shadow-lg rounded-lg ${
+          className={`bottomImage z-1 w-256W p-32P shadow-lg rounded-lg ${
             plan.font === "white"
               ? "bg-white text-dark-grayish-blue"
               : "scale-y-110 bg-custom-gradient text-white"

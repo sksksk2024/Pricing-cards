@@ -39,6 +39,10 @@ img {
 }
 
 /* Styles */
-html,
-body {
+/* bottomImage {
+  background: url('./../images/bg-bottom.svg') center center/cover no-repeat;
 }
+
+topImage {
+  background: url('./../images/bg-top.svg') center center/cover no-repeat;
+} */

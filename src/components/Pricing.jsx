@@ -2,7 +2,7 @@ import { useState } from "react";
 import Cards from "./Cards";
 
 const Pricing = () => {
-  const [isMonthly, setIsMonthly] = useState(false);
+  const [isMonthly, setIsMonthly] = useState(true);
 
   const pricingBasic = [{ title: "Basic", monthly: "$19.99", yearly: "$199.99", storage: "500 GB Storage", allowedUsers: "2 Users Allowed", sendUp: "Send up to 3 GB", font: "white" }];
 
@@ -18,7 +18,7 @@ const Pricing = () => {
   };
 
   return (
-    <div className="flex flex-col items-center justify-center pricing text-center py-10">
+    <div className="topImage flex flex-col items-center justify-center pricing text-center py-10">
       <h1 className="mb-8 font-bold text-grayish-blue text-xl">Our Pricing</h1>
       <div className="form-control w-52 mx-auto mb-10">
         <label className="flex gap-4 label cursor-pointer">
